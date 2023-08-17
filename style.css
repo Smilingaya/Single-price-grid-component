@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root{
+    /*color*/
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    /*font*/
+    --font-family: 'Karla', sans-serif;
+     --font-weight:400;
+     --font-weight1:700;
+     --font-size:16px ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+body{
+    background-color: var(--Light-Gray);
+  
+}
+main{
+    display: grid;
+    background-color: white;
+    height: 500px;
+    width: 700px;
+    transform :translate(-50%,-50%);
+     position:fixed;
+     top:50%;
+     left: 50%;
+     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+     border-radius:8px;
+     overflow: hidden; 
+   
+
+}
+.section-1{
+    grid-column: 1/4;
+    background-color: white;
+    padding: 5% 10%;
+    grid-row: 1/2;
+}
+.section-1 h2{
+    color: var(--Cyan);
+     font-weight: var(--font-weight1);
+     padding-bottom: 4%;
+}
+.section-1 h5{
+    color: var(--Bright-Yellow);
+    font-weight: var(--font-weight1);
+    font-size: 18px;
+    padding-bottom: 4%;
+}
+.section-1 p{
+    font-weight: var(--font-weight);
+    color: var(--Grayish-Blue);
+}
+.section-2{
+    width: 350px;
+    background-color: var(--Cyan);
+    grid-row: 2/9;
+    padding-left: 10%;
+}
+.section-2 h2{
+    color:var(--Light-Gray);
+    font-weight: var(--font-weight1);
+    padding: 10% 0 5% 0;
+}
+.section-3{
+    width: 350px;
+    background-color: var(--Cyan);
+    opacity: 0.8;
+    grid-row: 2/9;
+    padding-left: 10%;
+    
+}
+.section-2 p{
+    color: var(--Light-Gray);
+}
+.section-2 .pharagraph1 {
+    font-size: 30px;
+    font-weight: var(--font-weight1);
+}
+.section-2 .pharagraph1 span{
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    color: var(--Light-Gray);
+    opacity: 0.8;
+}
+.section-2 .pharagraph2{
+    font-weight: var(--font-weight);
+    font-size: 17px;
+    padding: 5% 0 8% 0;
+}
+.section-2 button{
+    padding: 5% 35%;
+    margin-top: 7%;
+    background-color: var(--Bright-Yellow);
+    color: var(--Light-Gray);
+    font-weight: var(--font-weight1);
+    border: none;
+    font-size: 16px;
+    border-radius: 7px;
+}
+.section-3 h2{
+font-weight: var(--font-weight1);
+ padding: 10% 0 5% 0;
+ color: var(--Light-Gray);
+}
+.section-3 p{
+    font-weight: var(--font-weight);
+ width: 76%;
+ color: var(--Light-Gray);
+ font-size: 16px;
+ line-height: 25px;
+}
+@media only screen and (max-width:600px){
+    main{
+        overflow-y:auto !important;
+        width: 65%;
+    
+        height: 90%;
+    
+    }
+    .section-1{
+        grid-column: 1/2;
+        grid-row: 1/7;
+        padding: 22% 5%;
+        
+    }
+    .section-1 p{
+        line-height: 1.8;
+    }
+    .section-2{
+        grid-column: 1/2;
+        grid-row: 7/14;
+        padding: 15% 5%;
+    }
+    .section-3{
+        grid-column: 1/2;
+        grid-row: 14/21;
+        padding: 10% 5%;
+    } 
+}
